@@ -64,13 +64,13 @@ $ ccoctl aws create-iam-roles \
 
 7. Install OpenShift
 
-7.1 Set AWS cli to use the **ocp-admin** this time
+- Set AWS cli to use the **ocp-admin** this time
 
 ```
 $ aws configure
 ```
 
-7.2 Add `credentialsMode: Manual` snippet after the `baseDomain` line
+- Add `credentialsMode: Manual` snippet after the `baseDomain` line
 
 ```
 $ cd ..
@@ -81,20 +81,20 @@ $ ./openshift-install create install-config --dir ocp/
 $ vi ocp/install-config.yaml
 ```
 
-7.3 Create manifests
+- Create manifests
 
 ```
 $ ./openshift-install create manifests --dir ocp/
 ```
 
-7.4 Copy the manifests and tls generated with ccoctl to install dir
+- Copy the manifests and tls generated with ccoctl to install dir
 
 ```
 $ cp `pwd`/cco/manifests/* ocp/manifests/
 $ cp -a `pwd`/cco/tls ocp/
 ```
 
-7.5 Run the installer
+- Run the installer
 
 ```
 $ ./openshift-install create cluster --dir ocp/
