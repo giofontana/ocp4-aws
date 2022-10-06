@@ -3,15 +3,15 @@
 
 ## Procedure
 
-1. Create a policy using this roles json file: https://github.com/giofontana/ocp4-aws/blob/main/aws-iam-roles/aws-iam-roles.json
-2. Create a user which uses this policy
+1. On AWS console, create a policy using this roles json file: https://github.com/giofontana/ocp4-aws/blob/main/aws-iam-roles/aws-iam-roles.json
+2. On AWS console, create a user which uses this policy
 
         Username: ocp-admin
         AWS_ACCESS_KEY_ID: *********
         AWS_SECRET_ACCESS_KEY: *********
 
-3. Create a policy using this roles json file: https://github.com/giofontana/ocp4-aws/blob/main/aws-iam-roles/aws-sts-manual-mode.json
-4. Create a user which uses this policy
+3. On AWS console, create a policy using this roles json file: https://github.com/giofontana/ocp4-aws/blob/main/aws-iam-roles/aws-sts-manual-mode.json
+4. On AWS console, create a user which uses this policy
 
         Username: ocp-cco
         AWS_ACCESS_KEY_ID: *********
